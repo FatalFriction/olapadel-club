@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
 import Navbar from "@/Components/Navbar/Navbar"
+import Footer from "@/Components/Module/Footer/Footer"
 
 const arpona = localFont({
   src: [
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

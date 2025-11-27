@@ -8,7 +8,8 @@ interface OlaButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     | "outline"
     | "outline-secondary"
     | "ghost"
-    | "number";
+    | "number"
+    | "number-outline";
   icon?: ReactNode;
   iconPosition?: "left" | "right";
   rounded?: "none" | "md" | "full";
@@ -29,7 +30,7 @@ const OlaButton = forwardRef<HTMLButtonElement, OlaButtonProps>(
     },
     ref
   ) => {
-    const isNumber = variant === "number";
+    const isNumber = variant === "number" || variant === "number-outline";
 
     return (
       <button
@@ -72,6 +73,9 @@ const OlaButton = forwardRef<HTMLButtonElement, OlaButtonProps>(
 
           variant === "number" &&
             "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground p-0",
+
+          variant === "number-outline" &&
+            "bg-primary-foreground text-primary hover:bg-accent hover:text-accent-foreground p-0",
 
           className
         )}

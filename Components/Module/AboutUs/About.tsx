@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="relative h-screen bg-primary-foreground flex">
+    <div className="relative h-screen bg-primary-foreground flex mx-24">
       <div className="flex flex-row my-auto">
         <div className="flex flex-col items-end">
           <div className="flex flex-row w-[300px]">

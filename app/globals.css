@@ -53,13 +53,11 @@
   --font-primary: "Arpona", serif;
   --font-secondary: "Faculty", serif;
 
-  /* Brand Colors */
   --court-green: #073730;
   --sideline-white: #f2f5e6;
   --diamond-green: #B2DCBF;
   --rubber-black: #23221E;
 
-  /* System mapping */
   --background: var(--sideline-white);
   --foreground: var(--rubber-black);
 
@@ -87,14 +85,12 @@
   --input: #d3ded7;
   --ring: var(--court-green);
 
-  /* Charts */
   --chart-1: var(--court-green);
   --chart-2: var(--diamond-green);
   --chart-3: #1f4f49;
   --chart-4: #9fd4bf;
   --chart-5: var(--rubber-black);
 
-  /* Sidebar */
   --sidebar: var(--court-green);
   --sidebar-foreground: var(--sideline-white);
   --sidebar-primary: var(--diamond-green);
@@ -104,10 +100,6 @@
   --sidebar-border: #0a2f2a;
   --sidebar-ring: var(--diamond-green);
 }
-
-/* =========================
-   DARK MODE (OLA PADEL)
-========================= */
 
 .dark {
   --background: var(--court-green);
