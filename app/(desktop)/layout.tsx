@@ -7,7 +7,7 @@ import Footer from "@/Components/Module/Footer/Footer"
 const arpona = localFont({
   src: [
     {
-      path: "../font/Arpona.otf",
+      path: "../Fonts/Arpona.otf",
       style: "normal"
     }
   ],
@@ -17,7 +17,7 @@ const arpona = localFont({
 
 const faculty = localFont({
   src: [
-    { path: "../font/Faculty.ttf", style: "normal"},
+    { path: "../Fonts/Faculty.ttf", style: "normal"},
   ],
   variable: "--font-faculty",
   display: "swap",

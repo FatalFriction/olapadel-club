@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const combos = [
   {
     colors: ["var(--sideline-white)", "var(--court-green)"],
-    logo: "/OLA_PNG-VERT-CONTRAST-MOB.png"
+    logo: "/OLA-VERT-CONTRAST-MOB.png"
   },
   {
     colors: ["var(--court-green)", "var(--diamond-green)"],
@@ -13,7 +13,7 @@ const combos = [
   },
   {
     colors: ["var(--court-green)", "var(--rubber-black)"],
-    logo: "/OLA_PNG-VERT-ACCENT-MO.png"
+    logo: "/OLA-VERT-ACCENT-MO.png"
   },
   {
     colors: ["var(--diamond-green)", "var(--sideline-white)"],
@@ -21,11 +21,11 @@ const combos = [
   },
   {
     colors: ["var(--court-green)", "var(--court-green)"],
-    logo: "/OLA_PNG-VERT-ACCENT-MO.png"
+    logo: "/OLA-VERT-ACCENT-MO.png"
   },
   {
     colors: ["var(--diamond-green)", "var(--court-green)"],
-    logo: "/OLA_PNG-VERT-CONTRAST-MOB.png"
+    logo: "/OLA-VERT-CONTRAST-MOB.png"
   }
 ];
 
