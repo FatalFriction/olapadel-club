@@ -9,7 +9,6 @@ export function MobileImage() {
         width={350}
         height={350}
         alt="Ola Padel Club Court"
-        fetchPriority="high"
         className="object-contain rounded-4xl"
         priority
       />

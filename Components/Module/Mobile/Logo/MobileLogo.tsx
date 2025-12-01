@@ -16,7 +16,6 @@ export function MobileLogo() {
         height={125}
         alt="Ola Padel Club Logo"
         className="object-contain"
-        fetchPriority="high"
         priority
       />
     </div>
