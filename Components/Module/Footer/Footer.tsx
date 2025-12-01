@@ -17,26 +17,18 @@ const Footer = () => {
             <div className="flex mt-4 gap-4">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent">
                 <SocialIcon
-                  network="facebook"
+                  network="whatsapp"
                   bgColor="none"
                   fgColor="#23221E"
+                  url="https://wa.me/6282225638033"
                 />
-              </div>
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent">
-                <SocialIcon network="x" bgColor="none" fgColor="#23221E" />
               </div>
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent">
                 <SocialIcon
                   network="instagram"
                   bgColor="none"
                   fgColor="#23221E"
-                />
-              </div>
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-accent">
-                <SocialIcon
-                  network="youtube"
-                  bgColor="none"
-                  fgColor="#23221E"
+                  url="https://www.instagram.com/"
                 />
               </div>
             </div>
@@ -64,10 +56,15 @@ const Footer = () => {
 
             <div>
               <h4 className="font-bold mb-4 text-xl">Contact Info</h4>
-              <div className="mt-10 text-lg max-w-xs">
-                <p className="mb-2 hover:underline cursor-pointer">
+              <div className="mt-10 text-lg max-w-xs flex flex-col">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=padelclub.ola@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mb-2 hover:underline cursor-pointer"
+                >
                   padelclub.ola@gmail.com
-                </p>
+                </a>
                 <a className="mb-2 hover:underline cursor-pointer" href="https://maps.app.goo.gl/v5hLWkbAknfut7tG9">
                   Green Garden Residence <br/> Block C5 nomor 2 dan 3, Kec. Kembangan, Kota Jakarta Barat.
                 </a>
@@ -78,10 +75,9 @@ const Footer = () => {
       </div>
 
       <div
-        className="w-full h-[200px] bg-repeat my-20 mx-auto"
+        className="w-full bg-repeat my-20 mx-auto big:bg-size-600 mediumbig:h-[200px] mediumbig:bg-size-580 bg-size-550 h-[180px]"
         style={{
           backgroundImage: "url('/OLA-HOR.png')",
-          backgroundSize: "600px",
         }}
       />
     </footer>

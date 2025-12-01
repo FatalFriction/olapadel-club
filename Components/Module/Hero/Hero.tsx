@@ -1,11 +1,12 @@
-import OlaButton from '@/Components/Button/Button'
-import { ArrowUpRight } from 'lucide-react'
-import Image from 'next/image'
+import OlaButton from "@/Components/Button/Button";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className='relative w-full h-screen flex items-center overflow-hidden'>
-    <Image
+    <div className="relative w-full h-screen flex items-center overflow-hidden">
+      <Image
         src="/netcourt.jpg"
         alt="Background"
         fill
@@ -30,24 +31,43 @@ const Hero = () => {
       />
 
       <div className="relative z-10 flex min-h-screen items-center justify-between text-primary-foreground px-20">
-        <div className="text-9xl tracking-wider w-[70%] mt-[10%] text-shadow-lg">
+        <div
+          className="
+          text-5xl md:text-6xl lg:text-7xl xl:text-9xl 
+          tracking-wider 
+          w-full md:w-[75%] lg:w-[70%] 
+          mt-[14%] md:mt-[12%] lg:mt-[10%] 
+          text-shadow-lg
+        "
+        >
           <h1>
-          Ola Padel Club
-          Court Of Simplicity
+            Ola Padel Club
+            <br />
+            Court Of Simplicity
           </h1>
         </div>
         <div className="flex flex-col text-3xl/10  w-[40%] text-left mt-[18%] text-shadow-lg">
           <p>
-            Play padel like never before <br/> friendly matches, skill building sessions,<br/> and a community that feels like family
+            Play padel like never before <br /> friendly matches, skill building
+            sessions,
+            <br /> and a community that feels like family
           </p>
           <div className="flex flex-row items-center mt-16 gap-6 w-[80%]">
-            <OlaButton className="text-3xl" variant="primary" icon={<ArrowUpRight size={24} />}>Book Trial</OlaButton>
-            <OlaButton className="text-3xl" variant="outline-secondary">Learn More</OlaButton>
+            <OlaButton
+              className="text-3xl"
+              variant="primary"
+              icon={<ArrowUpRight size={24} />}
+            >
+              <Link href="https://wa.me/6282225638033">Book Now</Link>
+            </OlaButton>
+            <OlaButton className="text-3xl" variant="outline-secondary">
+              <Link href="https://wa.me/6282225638033">Learn More</Link>
+            </OlaButton>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

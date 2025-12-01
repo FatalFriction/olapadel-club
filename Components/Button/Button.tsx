@@ -1,7 +1,11 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
+import { Slot } from "@radix-ui/react-slot";
 
 interface OlaButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  asChild?: boolean;
   variant?:
     | "primary"
     | "secondary"
@@ -19,6 +23,7 @@ interface OlaButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const OlaButton = forwardRef<HTMLButtonElement, OlaButtonProps>(
   (
     {
+      asChild = false,
       className,
       variant = "primary",
       icon,
@@ -30,15 +35,14 @@ const OlaButton = forwardRef<HTMLButtonElement, OlaButtonProps>(
     },
     ref
   ) => {
+    const Comp = asChild ? Slot : "button";
     const isNumber = variant === "number" || variant === "number-outline";
 
     return (
-      <button
+      <Comp
         ref={ref}
         {...props}
-        style={
-          isNumber ? { width: `${size}px`, height: `${size}px` } : undefined
-        }
+        style={isNumber ? { width: `${size}px`, height: `${size}px` } : undefined}
         className={cn(
           !isNumber && "w-full h-full px-4 py-1",
           isNumber && "shrink-0",
@@ -89,7 +93,7 @@ const OlaButton = forwardRef<HTMLButtonElement, OlaButtonProps>(
         {!isNumber && icon && iconPosition === "right" && (
           <span className="flex items-center">{icon}</span>
         )}
-      </button>
+      </Comp>
     );
   }
 );

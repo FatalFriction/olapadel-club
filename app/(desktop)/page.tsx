@@ -4,7 +4,7 @@ import Hero from "@/Components/Module/Hero/Hero"
 import HowtoJoin from "@/Components/Module/Join/HowtoJoin"
 import Services from "@/Components/Module/Services/Services"
 
-export default function Home() {
+export default function MobileHome() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <Hero/>

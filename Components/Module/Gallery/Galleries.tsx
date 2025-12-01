@@ -13,9 +13,9 @@ const items = [
 const Galleries = () => {
   return (
     <div className="relative h-screen bg-primary flex">
-      <div className="mx-24 my-auto">
+      <div className="mx-24 my-auto max-w-[1600px]">
         <div className="flex flex-col items-start w-screen">
-          <div className="flex flex-row w-[280px]">
+          <div className="flex flex-row max-w-[280px]">
             <OlaButton className="text-3xl" variant="number-outline" size={68}>
               <p style={{ fontFamily: "var(--font-faculty)" }}>4</p>
             </OlaButton>
