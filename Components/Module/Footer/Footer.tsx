@@ -13,7 +13,7 @@ const Footer = () => {
             max-lg:flex-col max-lg:gap-12 max-lg:items-center
           "
         >
-          <div className="flex flex-col max-w-lg text-center max-lg:text-center max-lg:items-center">
+          <div className="flex flex-col max-w-lg max-lg:text-center max-lg:items-center">
             <p className="text-xl">
               Padel sports for everyone <br />
               Fun, easy, and a great way to make new friends quickly.

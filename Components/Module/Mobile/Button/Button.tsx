@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ReactNode } from "react";
+import IconWrapper from "./IconWrapper";
 
 interface MobileButtonProps {
   href?: string;
@@ -19,22 +20,16 @@ export default function MobileButton({
   className = "",
 }: MobileButtonProps) {
   const baseStyles =
-    "w-[68%] flex items-center justify-center py-2 px-2 rounded-4xl " +
-    "bg-[#F2F5E6]/80 backdrop-blur-sm border border-[#F2F5E6]/10 active:scale-[0.98] transition " +
-    "text-[#073730] font-medium text-xl";
+    "w-[68%] flex items-center justify-center py-3 px-4 pl-2 rounded-4xl " +
+    "bg-[#F2F5E6]/80 backdrop-blur-sm border border-[#F2F5E6]/10 " +
+    "active:scale-[0.98] transition text-[#073730] font-medium text-xl leading-none";
 
-  const iconWrapper = icon ? (
-    <span className="flex items-center justify-center w-15 h-12 aspect-square shrink-0 overflow-hidden">
-      <span className="w-20 h-8 flex items-center justify-center">{icon}</span>
-    </span>
-  ) : null;
+  const iconWrapper = icon ? <IconWrapper>{icon}</IconWrapper> : null;
 
   const content = (
-    <div className="flex items-center gap-5 justify-center mx-auto">
+    <div className="flex items-center gap-4 justify-center">
       {iconWrapper}
-      <span className="whitespace-nowrap">
-        {children}
-      </span>
+      <span className="leading-none">{children}</span>
     </div>
   );
 
@@ -46,11 +41,7 @@ export default function MobileButton({
     );
 
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`${baseStyles} ${className}`}
-    >
+    <button type="button" onClick={onClick} className={`${baseStyles} ${className}`}>
       {content}
     </button>
   );

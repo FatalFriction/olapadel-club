@@ -47,15 +47,15 @@ export default function Home() {
           </MobileButton>
           <MobileButton
             href="https://courtside.id/mitra?mitra_id=a0728379-8662-4c9b-8cde-61fcceb8d247"
-            icon={<CalendarDays size={33} color="#073730" className="ml-3"/>}
+            icon={<CalendarDays size={33} color="#073730" className="ml-[17px]"/>}
           >
-            Book Court
+            <p className="ml-2">Book Court</p>
           </MobileButton>
           <MobileButton
             href="https://maps.app.goo.gl/jtyBEcyVXvnNEeaG8"
-            icon={<MapPinHouse size={33} color="#073730" className="ml-6"/>}
+            icon={<MapPinHouse size={33} color="#073730" className="ml-11"/>}
           >
-            Our Location
+            <p className="ml-5">Our Location</p>
           </MobileButton>
 
         <MobileImage />
