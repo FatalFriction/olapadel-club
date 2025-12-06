@@ -3,8 +3,7 @@ import Image from "next/image"
 export default function ImageGrid() {
   return (
     <section className="w-full bg-[#073730]">
-      <div className="grid grid-cols-3 grid-rows-2 gap-8 max-w-[1400px] mediumbig:max-w-[1600px] big:max-w-[1750px]">
-
+      <div className="grid grid-cols-3 grid-rows-2 gap-8 max-w-[1400px] mediumbig:max-w-[1600px] big:max-w-[1750px] max-sm:mb-10">
         <div className="relative w-full h-[290px] rounded-3xl overflow-hidden">
           <Image
             src="/gallery.jpg"
@@ -40,7 +39,6 @@ export default function ImageGrid() {
             className="object-cover"
           />
         </div>
-
       </div>
     </section>
   )

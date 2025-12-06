@@ -1,9 +1,7 @@
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/Components/ui/card";
@@ -12,8 +10,14 @@ import Image from "next/image";
 
 const CardContainer = () => {
   return (
-    <div className="grid grid-cols-4 gap-8">
-      <Card className="w-full max-w-md">
+    <div className="
+      grid grid-cols-1 
+      sm:grid-cols-2 
+      lg:grid-cols-4 
+      gap-8 
+      w-full
+    ">
+      <Card className="w-full max-w-md mx-auto">
         <CardHeader>
           <CardTitle>
             <SwordIcon
@@ -24,8 +28,7 @@ const CardContainer = () => {
           </CardTitle>
           <CardTitle>Community Matches</CardTitle>
           <CardDescription>
-            Weekly or monthly friendly matches to connect, compete, and enjoy
-            the game.
+            Weekly or monthly friendly matches to connect, compete, and enjoy the game.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -35,11 +38,12 @@ const CardContainer = () => {
             width={570}
             height={570}
             loading="lazy"
-            className="rounded-3xl"
+            className="rounded-3xl w-full h-[472px]"
           />
         </CardContent>
       </Card>
-      <Card className="w-full max-w-md">
+
+      <Card className="w-full max-w-md mx-auto">
         <CardHeader>
           <CardTitle>
             <Users
@@ -50,23 +54,23 @@ const CardContainer = () => {
           </CardTitle>
           <CardTitle>Group Training Sessions</CardTitle>
           <CardDescription>
-            Professional coaching focused on technique, structured drills, and
-            match strategy.
+            Professional coaching focused on technique, structured drills, and match strategy.
           </CardDescription>
         </CardHeader>
         <CardContent>
-            <div className="relative w-full h-[450px] overflow-hidden rounded-3xl">
-          <Image
-            src="/sosmed.png"
-            alt="Community Matches Card Image"
-            fill
-            className="object-cover"
-            loading="lazy"
-          />
+          <div className="relative w-full h-[450px] max-sm:h-[300px] overflow-hidden rounded-3xl">
+            <Image
+              src="/sosmed.png"
+              alt="Group Training Session Image"
+              fill
+              className="object-cover"
+              loading="lazy"
+            />
           </div>
         </CardContent>
       </Card>
-      <Card className="w-full max-w-md">
+
+      <Card className="w-full max-w-md mx-auto">
         <CardHeader>
           <CardTitle>
             <UserCheck
@@ -77,15 +81,14 @@ const CardContainer = () => {
           </CardTitle>
           <CardTitle>1 on 1 Coaching</CardTitle>
           <CardDescription>
-            Private one on one coaching focused solely on your game and
-            progress.
+            Private one on one coaching focused solely on your game and progress.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="relative w-full h-[450px] overflow-hidden rounded-3xl">
+          <div className="relative w-full h-[450px] max-sm:h-[300px] overflow-hidden rounded-3xl">
             <Image
-              src="/Coach.jpg"
-              alt="Community Matches Card Image"
+              src="/coach.jpg"
+              alt="Coaching Image"
               fill
               className="object-cover"
               loading="lazy"
@@ -93,14 +96,17 @@ const CardContainer = () => {
           </div>
         </CardContent>
       </Card>
-      <Image
-        src="/OLA_PNG-VERT-CONTRAST.png"
-        alt="Background"
-        width={160}
-        height={160}
-        priority
-        className="mx-auto my-auto mt-10"
-      />
+
+      <div className="flex justify-center items-center w-full">
+        <Image
+          src="/OLA_PNG-VERT-CONTRAST.png"
+          alt="Brand Logo"
+          width={160}
+          height={160}
+          priority
+          className="mx-auto my-auto max-sm:w-28 max-sm:h-[350px]"
+        />
+      </div>
     </div>
   );
 };

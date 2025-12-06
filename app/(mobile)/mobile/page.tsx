@@ -32,7 +32,7 @@ export default function Home() {
             Whatsapp
           </MobileButton>
           <MobileButton
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/ola.padelclub"
             icon={
               <SocialIcon
                 network="instagram"
