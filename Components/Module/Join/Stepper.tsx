@@ -17,7 +17,7 @@ const Stepper = ({
     <div
       className="
         flex flex-row group cursor-pointer
-        gap-8 max-lg:gap-6 max-md:gap-4 max-sm:gap-3
+        gap-8 max-lg:gap-6 max-lg:gap-4 max-lg:gap-3
       "
       style={{ fontFamily: "var(--font-faculty)" }}
     >
@@ -25,8 +25,8 @@ const Stepper = ({
         className="
           text-4xl text-primary 
           max-lg:text-3xl 
-          max-md:text-2xl 
-          max-sm:text-xl
+          max-lg:text-2xl 
+          max-lg:text-xl
         "
         style={{
           marginRight: stepSpacing
@@ -42,16 +42,16 @@ const Stepper = ({
           flex flex-col gap-2 
           min-w-[600px] 
           max-lg:min-w-[500px]
-          max-md:min-w-[350px]
-          max-sm:min-w-0 max-sm:w-full
+          max-lg:min-w-[350px]
+          max-lg:min-w-0 max-lg:w-full
         "
       >
         <p
           className="
             text-4xl 
             max-lg:text-3xl 
-            max-md:text-2xl 
-            max-sm:text-xl
+            max-lg:text-2xl 
+            max-lg:text-xl
           "
         >
           {title}
@@ -61,8 +61,8 @@ const Stepper = ({
           className="
             text-xl
             max-lg:text-lg
-            max-md:text-base
-            max-sm:text-sm
+            max-lg:text-base
+            max-lg:text-sm
           "
         >
           {description}
@@ -72,8 +72,8 @@ const Stepper = ({
           className="
             relative max-w-[600px] w-full h-[3px] 
             bg-primary overflow-hidden
-            max-md:max-w-[90%]
-            max-sm:max-w-[80%]
+            max-lg:max-w-[90%]
+            max-lg:max-w-[80%]
           "
         >
           <div

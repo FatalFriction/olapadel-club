@@ -58,7 +58,7 @@ const CardContainer = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="relative w-full h-[450px] max-sm:h-[300px] overflow-hidden rounded-3xl">
+          <div className="relative w-full h-[450px] max-lg:h-[300px] overflow-hidden rounded-3xl">
             <Image
               src="/sosmed.png"
               alt="Group Training Session Image"
@@ -85,7 +85,7 @@ const CardContainer = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="relative w-full h-[450px] max-sm:h-[300px] overflow-hidden rounded-3xl">
+          <div className="relative w-full h-[450px] max-lg:h-[300px] overflow-hidden rounded-3xl">
             <Image
               src="/coach.jpg"
               alt="Coaching Image"
@@ -104,7 +104,7 @@ const CardContainer = () => {
           width={160}
           height={160}
           priority
-          className="mx-auto my-auto max-sm:w-28 max-sm:h-[350px]"
+          className="mx-auto my-auto max-lg:w-28 max-lg:h-[350px]"
         />
       </div>
     </div>

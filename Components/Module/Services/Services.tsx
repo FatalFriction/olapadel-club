@@ -4,12 +4,12 @@ import CardContainer from "./CardContainer";
 const Services = () => {
   return (
     <div className="relative h-screen bg-primary flex max-lg:h-auto">
-      <div className="mx-24 my-auto max-xl:mx-16 max-lg:mx-10 max-md:mx-6 max-sm:mx-4 w-full">
+      <div className="mx-24 my-auto max-xl:mx-16 max-lg:mx-10 w-full">
         <div className="flex flex-col items-start w-full">
 
-          <div className="flex flex-row w-[280px] max-md:w-full max-md:justify-center max-sm:mt-15">
+          <div className="flex flex-row w-[280px] max-lg:w-full max-lg:justify-center max-lg:mt-15">
             <OlaButton
-              className="text-3xl max-md:hidden"
+              className="text-3xl max-lg:hidden"
               variant="number-outline"
               size={68}
             >
@@ -17,18 +17,18 @@ const Services = () => {
             </OlaButton>
 
             <OlaButton
-              className="text-4xl max-sm:text-2xl max-md:w-[200px] max-md:h-[62px]"
+              className="text-4xl max-lg:text-2xl max-lg:w-[200px] max-lg:h-[62px]"
               variant="outline-secondary"
             >
               <p className="px-8 py-2">Services</p>
             </OlaButton>
           </div>
 
-          <h2 className="text-primary-foreground text-5xl my-6 max-sm:text-3xl max-md:text-4xl max-lg:text-center max-lg:w-full">
+          <h2 className="text-primary-foreground text-5xl my-6 max-lg:text-3xl max-lg:text-center max-lg:w-full">
             Our Services and Activities
           </h2>
 
-          <div className="w-full max-lg:flex max-lg:justify-center">
+          <div className="w-full max-lg:flex max-lg:justify-center max-lg:mb-15">
             <CardContainer />
           </div>
 

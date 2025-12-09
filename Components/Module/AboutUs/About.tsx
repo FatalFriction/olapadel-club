@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="relative h-screen bg-primary-foreground flex mx-24 max-lg:mx-4 max-md:h-auto">
+    <div className="relative h-screen bg-primary-foreground flex mx-24 max-lg:mx-4 max-lg:h-auto">
       <div className="flex flex-row my-auto w-full max-lg:flex-col max-lg:items-center max-lg:gap-12">
         <div className="flex flex-col items-end max-lg:items-center max-lg:w-full">
-          <div className="flex flex-row w-[300px] max-sm:w-full max-sm:justify-center max-lg:justify-center max-md:mt-15">
-            <OlaButton className="text-3xl max-md:hidden" variant="number" size={64}>
+          <div className="flex flex-row w-[300px] max-lg:w-full max-lg:justify-center max-lg:justify-center max-lg:mt-15">
+            <OlaButton className="text-3xl max-lg:hidden" variant="number" size={64}>
               1
             </OlaButton>
             <OlaButton
-              className="text-3xl max-md:w-[210px] max-md:h-[62px]"
+              className="text-3xl max-lg:w-[210px] max-lg:h-[62px]"
               variant="outline"
             >
               About Us
@@ -24,12 +24,12 @@ const AboutUs = () => {
             width={160}
             height={160}
             priority
-            className="max-sm:w-24 max-sm:h-[350px]"
+            className="max-lg:w-24 max-lg:h-[350px]"
           />
         </div>
 
         <div className="flex flex-col gap-10 h-1/2 items-center max-lg:w-full  mx-10">
-          <div className="w-2/3 max-lg:w-[90%] text-center text-2xl text-foreground max-sm:text-lg">
+          <div className="w-2/3 max-lg:w-[90%] text-center text-2xl text-foreground max-lg:text-lg">
             <p>
               Ola Padel Club is dedicated to the pure experience of padel. Built
               for precision, rhythm, and flow, every court is designed to
@@ -46,7 +46,7 @@ const AboutUs = () => {
             className="max-lg:w-[90%] max-lg:h-auto rounded-xl"
           />
 
-          <div className="w-2/3 max-lg:w-[90%] text-center text-2xl text-foreground max-sm:text-lg">
+          <div className="w-2/3 max-lg:w-[90%] text-center text-2xl text-foreground max-lg:text-lg">
             <p>
               Through iconic simplicity, we remove distraction and create space
               for focus, performance, and connection around the game.
@@ -56,7 +56,7 @@ const AboutUs = () => {
 
         <div className="right-container flex flex-col justify-evenly max-lg:items-center max-lg:mb-6">
           <div className="flex flex-col items-center">
-            <p className="text-8xl text-primary tracking-widest max-lg:hidden writing-vertical-rl max-lg:text-6xl max-sm:text-4xl">
+            <p className="text-8xl text-primary tracking-widest max-lg:hidden writing-vertical-rl max-lg:text-6xl max-lg:text-4xl">
               2026
             </p>
           </div>

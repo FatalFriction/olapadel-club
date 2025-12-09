@@ -5,15 +5,15 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-
+    <div className="relative w-full h-screen overflow-hidden hero-desktop">
       <Image
         src="/netcourt.jpg"
         alt="Background"
-        width={1600}
-        height={1600}
+        fill
         priority
-        className="object-cover -z-10 w-[1920px] h-full absolute top-0 left-0"
+        quality={100}
+        className="object-cover object-center -z-10"
+        sizes="100vw"
       />
 
       <div className="hidden lg:flex relative z-10 min-h-screen items-center justify-between text-primary-foreground px-20">
@@ -55,30 +55,29 @@ const Hero = () => {
       </div>
 
       <div className="lg:hidden relative z-20 flex flex-col items-center justify-center h-full px-8 text-primary-foreground text-center">
+        <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/25 to-transparent -z-10" />
 
-        <div className="absolute inset-0 bg-linear-to-t from-black/35 via-black/15 to-transparent -z-10" />
-
-        <h1 className="text-4xl sm:text-5xl tracking-wider font-semibold text-shadow-lg mt-32">
+        <h1 className="text-7xl sm:text-8xl tracking-wider font-bold text-shadow-lg mt-50">
           Ola Padel Club
           <br />
           Court Of Simplicity
         </h1>
 
-        <p className="text-lg sm:text-xl mt-6 max-w-md text-shadow-lg">
-          Play padel like never before. Friendly matches, skill-building
+        <p className="text-5xl sm:text-5xl mt-8 max-w-2xl text-shadow-lg">
+          Play padel like never before. <br />Friendly matches, skill building
           sessions, and a community that feels like family.
         </p>
 
-        <div className="flex flex-col gap-4 mt-10 w-full max-w-fit">
+        <div className="flex flex-col gap-8 mt-10 w-full max-w-fit">
           <OlaButton
-            className="text-2xl"
+            className="text-6xl"
             variant="primary"
-            icon={<ArrowUpRight size={20} />}
+            icon={<ArrowUpRight size={55} />}
           >
             <Link href="https://wa.me/6282225638033">Book Now</Link>
           </OlaButton>
 
-          <OlaButton className="text-2xl" variant="outline-secondary">
+          <OlaButton className="text-6xl" variant="outline-secondary">
             <Link href="https://wa.me/6282225638033">Learn More</Link>
           </OlaButton>
         </div>

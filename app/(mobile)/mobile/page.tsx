@@ -10,13 +10,9 @@ export default function Home() {
   return (
     <BackgroundProvider>
       <div className="relative min-h-screen w-full overflow-hidden">
-
         <Background />
-
         <div className="relative z-10 p-2 space-y-6 flex flex-col items-center">
-
           <MobileLogo />
-
           <MobileButton
             href="https://wa.me/6282225638033"
             icon={
