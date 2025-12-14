@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="relative h-screen bg-primary-foreground flex mx-24 max-lg:mx-4 max-lg:h-auto">
-      <div className="flex flex-row my-auto w-full max-lg:flex-col max-lg:items-center max-lg:gap-12">
+    <div className="relative h-full bg-primary-foreground flex mx-24 max-lg:mx-4 max-lg:h-auto">
+      <div className="flex flex-row my-auto w-full max-lg:flex-col max-lg:items-center max-lg:gap-12 xl:my-16">
         <div className="flex flex-col items-end max-lg:items-center max-lg:w-full">
-          <div className="flex flex-row w-[300px] max-lg:w-full max-lg:justify-center max-lg:justify-center max-lg:mt-15">
+          <div className="flex flex-row w-[300px] max-lg:w-full max-lg:justify-center max-lg:mt-15">
             <OlaButton className="text-3xl max-lg:hidden" variant="number" size={64}>
               1
             </OlaButton>
@@ -56,7 +56,7 @@ const AboutUs = () => {
 
         <div className="right-container flex flex-col justify-evenly max-lg:items-center max-lg:mb-6">
           <div className="flex flex-col items-center">
-            <p className="text-8xl text-primary tracking-widest max-lg:hidden writing-vertical-rl max-lg:text-6xl max-lg:text-4xl">
+            <p className="text-8xl text-primary tracking-widest max-lg:hidden writing-vertical-rl max-lg:text-6xl">
               2026
             </p>
           </div>

@@ -3,8 +3,8 @@ import MasonryGrid from "./Masonry";
 
 const Galleries = () => {
   return (
-    <div className="relative h-screen bg-primary flex max-lg:h-auto">
-      <div className="mx-24 my-auto max-w-[1600px] 
+    <div className="relative h-full bg-primary flex max-lg:h-auto">
+      <div className="mx-24 xl:my-16 max-w-[1600px] 
         max-xl:mx-16 max-lg:mx-10 w-full">
         
         <div className="flex flex-col items-start w-full max-lg:items-center">

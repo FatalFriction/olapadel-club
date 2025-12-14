@@ -3,8 +3,8 @@ import CardContainer from "./CardContainer";
 
 const Services = () => {
   return (
-    <div className="relative h-screen bg-primary flex max-lg:h-auto">
-      <div className="mx-24 my-auto max-xl:mx-16 max-lg:mx-10 w-full">
+    <div className="relative h-full bg-primary flex max-lg:h-auto">
+      <div className="mx-24 xl:my-16 max-xl:mx-16 max-lg:mx-10 w-full">
         <div className="flex flex-col items-start w-full">
 
           <div className="flex flex-row w-[280px] max-lg:w-full max-lg:justify-center max-lg:mt-15">

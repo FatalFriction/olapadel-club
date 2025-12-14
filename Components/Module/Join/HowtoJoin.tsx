@@ -4,8 +4,8 @@ import Stepper from "./Stepper";
 
 const HowtoJoin = () => {
   return (
-    <div className="relative h-screen bg-primary-foreground flex mx-24 max-xl:mx-16 max-lg:mx-10 max-lg:mx-6 max-lg:mx-4 max-lg:h-auto">
-      <div className="flex flex-row my-auto gap-30 max-lg:flex-col max-lg:gap-16 max-lg:items-center w-full">
+    <div className="relative h-full bg-primary-foreground flex mx-24 max-xl:mx-16 max-lg:mx-10 max-lg:h-auto">
+      <div className="flex flex-row xl:my-16 gap-30 max-lg:flex-col max-lg:gap-16 max-lg:items-center w-full">
 
         <div className="flex flex-col items-start max-lg:items-center w-full">
           <div className="flex flex-row max-lg:w-full max-lg:justify-center max-lg:mt-15">

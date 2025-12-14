@@ -19,8 +19,8 @@ const Hero = () => {
       <div className="hidden lg:flex relative z-10 min-h-screen items-center justify-between text-primary-foreground px-20">
         <div
           className="
-            text-5xl md:text-6xl lg:text-7xl xl:text-9xl 
-            tracking-wider 
+            text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl
+            tracking-wider
             w-full md:w-[75%] lg:w-[70%] 
             mt-[14%] md:mt-[12%] lg:mt-[10%] 
             text-shadow-lg
@@ -41,43 +41,43 @@ const Hero = () => {
 
           <div className="flex flex-row items-center mt-16 gap-6 w-[80%]">
             <OlaButton
-              className="text-3xl"
+              className="lg:text-2xl 2xl:text-3xl"
               variant="primary"
-              icon={<ArrowUpRight size={24} />}
+              icon={<ArrowUpRight size={33} />}
             >
               <Link href="https://wa.me/6282225638033">Book Now</Link>
             </OlaButton>
-            <OlaButton className="text-3xl" variant="outline-secondary">
+            <OlaButton className="lg:text-2xl 2xl:text-3xl" variant="outline-secondary">
               <Link href="https://wa.me/6282225638033">Learn More</Link>
             </OlaButton>
           </div>
         </div>
       </div>
 
-      <div className="lg:hidden relative z-20 flex flex-col items-center justify-center h-full px-8 text-primary-foreground text-center">
+      <div className="lg:hidden relative z-20 flex flex-col items-center justify-center h-full px-8 text-primary-foreground text-center pb-6">
         <div className="absolute inset-0 bg-linear-to-t from-black/45 via-black/25 to-transparent -z-10" />
 
-        <h1 className="text-7xl sm:text-8xl tracking-wider font-bold text-shadow-lg mt-50">
+        <h1 className="text-5xl md:text-6xl sm:text-8xl tracking-wider font-bold text-shadow-lg mt-40">
           Ola Padel Club
           <br />
           Court Of Simplicity
         </h1>
 
-        <p className="text-5xl sm:text-5xl mt-8 max-w-2xl text-shadow-lg">
+        <p className="text-2xl md:text-4xl sm:text-5xl mt-8 max-w-2xl text-shadow-lg">
           Play padel like never before. <br />Friendly matches, skill building
           sessions, and a community that feels like family.
         </p>
 
-        <div className="flex flex-col gap-8 mt-10 w-full max-w-fit">
+        <div className="flex flex-col gap-6 mt-10 w-full max-w-fit">
           <OlaButton
-            className="text-6xl"
+            className="text-3xl sm:text-5xl"
             variant="primary"
-            icon={<ArrowUpRight size={55} />}
+            icon={<ArrowUpRight size={35} />}
           >
             <Link href="https://wa.me/6282225638033">Book Now</Link>
           </OlaButton>
 
-          <OlaButton className="text-6xl" variant="outline-secondary">
+          <OlaButton className="text-3xl sm:text-5xl" variant="outline-secondary">
             <Link href="https://wa.me/6282225638033">Learn More</Link>
           </OlaButton>
         </div>
