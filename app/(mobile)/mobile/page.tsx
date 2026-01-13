@@ -48,12 +48,6 @@ export default function Home() {
             <p className="ml-2">Book Court</p>
           </MobileButton>
           <MobileButton
-            href="https://docs.google.com/forms/d/1V08ST-fK00tGBmjdA0B84198WsDWN6lqOi8apD06On8/viewform?chromeless=1&edit_requested=true"
-            icon={<CalendarCheck2Icon size={33} color="#073730" className="ml-1"/>}
-          >
-            <p className="mr-3">Free Trial</p>
-          </MobileButton>
-          <MobileButton
             href="https://maps.app.goo.gl/jtyBEcyVXvnNEeaG8"
             icon={<MapPinHouse size={33} color="#073730" className="ml-11"/>}
           >
