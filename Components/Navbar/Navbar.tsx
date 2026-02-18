@@ -61,7 +61,7 @@ const Navbar = () => {
             </NavigationMenuLink>
 
             <NavigationMenuItem>
-              <Link href="https://courtside.id/mitra?mitra_id=a0728379-8662-4c9b-8cde-61fcceb8d247">
+              <Link href="https://link.ayo.co.id/l/8h99K71LAu-OLA-PADEL">
                 <OlaButton
                   className="text-xl"
                   variant="secondary"
@@ -111,7 +111,7 @@ const Navbar = () => {
           </Link>
 
           <Link 
-            href="https://courtside.id/mitra?mitra_id=a0728379-8662-4c9b-8cde-61fcceb8d247"
+            href="https://link.ayo.co.id/l/8h99K71LAu-OLA-PADEL"
             onClick={() => setOpen(false)}
             className="text-primary text-xl tracking-widest"
           >

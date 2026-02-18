@@ -42,7 +42,7 @@ export default function Home() {
             Instagram
           </MobileButton>
           <MobileButton
-            href="https://courtside.id/mitra?mitra_id=a0728379-8662-4c9b-8cde-61fcceb8d247"
+            href="https://link.ayo.co.id/l/8h99K71LAu-OLA-PADEL"
             icon={<CalendarDays size={33} color="#073730" className="ml-[17px]"/>}
           >
             <p className="ml-2">Book Court</p>
