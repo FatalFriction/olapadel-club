@@ -45,7 +45,13 @@ export default function Home() {
             href="https://link.ayo.co.id/l/8h99K71LAu-OLA-PADEL"
             icon={<CalendarDays size={33} color="#073730" className="ml-[17px]"/>}
           >
-            <p className="ml-2">Book Court</p>
+            <p className="ml-2">Book on Ayo</p>
+          </MobileButton>
+          <MobileButton
+            href="https://reclub.co/id/clubs/@ola-padel-club-2"
+            icon={<CalendarDays size={33} color="#073730" className="ml-[17px]"/>}
+          >
+            <p className="ml-2">Book on Reclub</p>
           </MobileButton>
           <MobileButton
             href="https://maps.app.goo.gl/jtyBEcyVXvnNEeaG8"
